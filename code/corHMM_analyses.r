@@ -1,0 +1,536 @@
+##################################################################################################################################
+#############perform corHMM analyses on ML tree timescaled with median node heights (mltree_timescaled_w_median_node_heights)
+##################################################################################################################################
+
+notrees<-"1"
+filepath<-"/home/mpnelsen/asco_phylo_all_medhts/"
+#file.prefix<-"bs_"
+traits<-read.csv(file=paste(filepath,"bad_idea_lichenization_for_corhmm.csv",sep=""),header=TRUE,stringsAsFactors=FALSE)
+mods<-c("1Rate","2Rate","3Rate")
+vals1<-paste(c("loglik","AIC","AICc","rate.cat", "solution1to0","solution0to1","index.mat1to0","index.mat0to1","iterations","eigval","eigvect"),mods[1],sep=".")
+vals2<-paste(c("loglik","AIC","AICc","rate.cat",
+"solution1R1to0R1","solution0R2to0R1","solution0R1to1R1","solution1R2to1R1","solution0R1to0R2","solution1R2to0R2","solution1R1to1R2","solution0R2to1R2","index.mat1R1to0R1","index.mat0R2to0R1","index.mat0R1to1R1","index.mat1R2to1R1","index.mat0R1to0R2","index.mat1R2to0R2","index.mat1R1to1R2","index.mat0R2to1R2","iterations","eigval","eigvect"),mods[2],sep=".")
+vals3<-paste(c("loglik","AIC","AICc","rate.cat",
+"solution1R1to0R1","solution0R2to0R1","solution0R1to1R1","solution1R2to1R1","solution0R1to0R2","solution1R2to0R2","solution0R3to0R2","solution1R1to1R2","solution0R2to1R2","solution1R3to1R2","solution0R2to0R3","solution1R3to0R3","solution1R2to1R3","solution0R3to1R3","index.mat1R1to0R1","index.mat0R2to0R1","index.mat0R1to1R1","index.mat1R2to1R1","index.mat0R1to0R2","index.mat1R2to0R2","index.mat0R3to0R2","index.mat1R1to1R2","index.mat0R2to1R2","index.mat1R3to1R2","index.mat0R2to0R3","index.mat1R3to0R3","index.mat1R2to1R3","index.mat0R3to1R3","iterations","eigval","eigvect"),mods[3],sep=".")
+vals<-c(vals1,vals2,vals3)
+res<-data.frame(matrix(ncol=(length(vals)+1),nrow=0))
+colnames(res)<-c(vals,"Best")
+
+#tr<-rayDISC.example$tree
+#traits<-rayDISC.example$trait[,c(1,3)]
+
+for(p in 1:notrees){
+	require(corHMM)
+	tr<-read.tree(file=paste(filepath,"RAxML_bestTree.fused_bad_idea_new_ML150_21july2014_treepl_cv.tre",sep=""))
+	Age<-branching.times(tr)
+	for(m in 1:length(mods)){
+		if(m==1){
+			zz<-corHMM(phy=tr,dat=traits[,c(1,2)],rate.cat=m,node.states="marginal",root.p=c(1,0),n.cores=20,nstarts=100)		
+		}
+		if(m==2){
+			zz<-corHMM(phy=tr,dat=traits[,c(1,2)],rate.cat=m,node.states="marginal",root.p=c(1,0,1,0),n.cores=20,nstarts=100)		
+		}
+		if(m==3){
+			zz<-corHMM(phy=tr,dat=traits[,c(1,2)],rate.cat=m,node.states="marginal",root.p=c(1,0,1,0,1,0),n.cores=20,nstarts=100)					
+		}
+		zz$states<-cbind(zz$states,as.matrix(Age))
+		if(m==1){
+			colnames(zz$states)[3]<-"Age"
+		}
+		if(m==2){
+			colnames(zz$states)[5]<-"Age"
+		}
+		if(m==3){
+			colnames(zz$states)[7]<-"Age"
+		}
+		
+		write.table(zz$states,file=paste(filepath,"MLTREE_",mods[m],"_rootreallyfixed_corhmm_states.csv",sep=""),col.names=NA,sep=",")
+		write.tree(zz$phy,file=paste(filepath,"MLTREE_",mods[m],"_rootreallyfixed_corhmm_states.tre",sep=""))
+		if(m==1){
+			res[p,1]<-zz$loglik
+			res[p,2]<-zz$AIC
+			res[p,3]<-zz$AICc
+			res[p,4]<-zz$rate.cat
+			res[p,5]<-zz$solution[2,1]
+			res[p,6]<-zz$solution[1,2]
+			res[p,7]<-zz$index.mat[2,1]
+			res[p,8]<-zz$index.mat[1,2]
+			#if n.cores specified, this field is NULL
+			if(!is.null(zz$iterations)){
+				res[p,9]<-zz$iterations
+			}	
+			if(!is.null(zz$eigval)){
+				res[p,10]<-zz$eigval
+			}	
+			if(!is.null(zz$eigvect)){
+				res[p,11]<-zz$eigvect
+			}	
+		}
+		if(m==2){
+			res[p,12]<-zz$loglik
+			res[p,13]<-zz$AIC
+			res[p,14]<-zz$AICc
+			res[p,15]<-zz$rate.cat
+			res[p,16]<-zz$solution[2,1]
+			res[p,17]<-zz$solution[3,1]
+			res[p,18]<-zz$solution[1,2]
+			res[p,19]<-zz$solution[4,2]
+			res[p,20]<-zz$solution[1,3]
+			res[p,21]<-zz$solution[4,3]
+			res[p,22]<-zz$solution[2,4]
+			res[p,23]<-zz$solution[3,4]
+			res[p,24]<-zz$index.mat[2,1]
+			res[p,25]<-zz$index.mat[3,1]
+			res[p,26]<-zz$index.mat[1,2]
+			res[p,27]<-zz$index.mat[4,2]
+			res[p,28]<-zz$index.mat[1,3]
+			res[p,29]<-zz$index.mat[4,3]
+			res[p,30]<-zz$index.mat[2,4]
+			res[p,31]<-zz$index.mat[3,4]
+			if(!is.null(zz$iterations)){
+				res[p,32]<-zz$iterations
+			}	
+			if(!is.null(zz$eigval)){
+				res[p,33]<-zz$eigval
+			}	
+			if(!is.null(zz$eigvect)){
+				res[p,34]<-zz$eigvect
+			}	
+		}
+		if(m==3){
+			res[p,35]<-zz$loglik
+			res[p,36]<-zz$AIC
+			res[p,37]<-zz$AICc
+			res[p,38]<-zz$rate.cat
+			res[p,39]<-zz$solution[2,1]
+			res[p,40]<-zz$solution[3,1]
+			res[p,41]<-zz$solution[1,2]
+			res[p,42]<-zz$solution[4,2]
+			res[p,43]<-zz$solution[1,3]
+			res[p,44]<-zz$solution[4,3]
+			res[p,45]<-zz$solution[5,3]
+			res[p,46]<-zz$solution[2,4]
+			res[p,47]<-zz$solution[3,4]
+			res[p,48]<-zz$solution[6,4]
+			res[p,49]<-zz$solution[3,5]
+			res[p,50]<-zz$solution[6,5]
+			res[p,51]<-zz$solution[4,6]
+			res[p,52]<-zz$solution[5,6]
+			res[p,53]<-zz$index.mat[2,1]
+			res[p,54]<-zz$index.mat[3,1]
+			res[p,55]<-zz$index.mat[1,2]
+			res[p,56]<-zz$index.mat[4,2]
+			res[p,57]<-zz$index.mat[1,3]
+			res[p,58]<-zz$index.mat[4,3]
+			res[p,59]<-zz$index.mat[5,3]
+			res[p,60]<-zz$index.mat[2,4]
+			res[p,61]<-zz$index.mat[3,4]
+			res[p,62]<-zz$index.mat[6,4]
+			res[p,63]<-zz$index.mat[3,5]
+			res[p,64]<-zz$index.mat[6,5]
+			res[p,65]<-zz$index.mat[4,6]
+			res[p,66]<-zz$index.mat[5,6]
+			if(!is.null(zz$iterations)){
+				res[p,67]<-zz$iterations
+			}			
+			if(!is.null(zz$eigval)){
+				res[p,68]<-zz$eigval
+			}	
+			if(!is.null(zz$eigvect)){
+				res[p,69]<-zz$eigvect
+			}	
+		}
+	}
+	res[p,70]<-mods[min(res[p,paste("AICc",mods,sep=".")])==res[p,paste("AICc",mods,sep=".")]]
+	write.csv(res,file=paste(filepath,"MLTREE_rootreallyfixed_corhmm_results.csv",sep=""))
+}
+
+##################################################################################################################################
+#############perform corHMM analyses on ML tree timescaled with sample of trees (mltree_timescaled_w_sample)
+##################################################################################################################################
+notrees<-c(66, 138, 153, 228, 244, 364, 683, 722, 780, 787, 1025, 1165, 1193, 1260, 1315, 1339, 1423, 1510, 1599, 1676, 1770, 1841, 1981, 2030, 2182, 2202, 2206, 2359, 2451, 2629, 2635, 2695, 2701, 2791, 2816, 3168, 3303, 3493, 3552, 3562, 3602, 3637, 3684, 3699, 3715,
+3746, 3914, 4017, 4021, 4197, 4199, 4229, 4384, 4491, 4853, 4976, 4986, 5042, 5097, 5134, 5143, 5220, 5434, 5488, 5528, 5568, 5934, 5976, 6007, 6052, 6080, 6420, 6445, 6492, 6547, 6586, 6677, 6692, 6776, 6943, 7081, 7086, 7158, 7172, 7218, 7429, 7434, 7438, 7454, 7510,
+7631, 7792, 7830, 7928, 8051, 8106, 8159, 8222, 8301, 8328)
+filepath<-"/home/mattnelsen/asco_phylo_ml_100medhts/"
+file.prefix<-"ML_w_"
+traits<-read.csv(file=paste(filepath,"bad_idea_lichenization_for_corhmm.csv",sep=""),header=TRUE,stringsAsFactors=FALSE)
+mods<-c("1Rate","2Rate")
+vals1<-paste(c("loglik","AIC","AICc","rate.cat", "solution1to0","solution0to1","index.mat1to0","index.mat0to1","iterations","eigval","eigvect"),mods[1],sep=".")
+vals2<-paste(c("loglik","AIC","AICc","rate.cat",
+"solution1R1to0R1","solution0R2to0R1","solution0R1to1R1","solution1R2to1R1","solution0R1to0R2","solution1R2to0R2","solution1R1to1R2","solution0R2to1R2","index.mat1R1to0R1","index.mat0R2to0R1","index.mat0R1to1R1","index.mat1R2to1R1","index.mat0R1to0R2","index.mat1R2to0R2","index.mat1R1to1R2","index.mat0R2to1R2","iterations","eigval","eigvect"),mods[2],sep=".")
+vals<-c(vals1,vals2)
+res<-data.frame(matrix(ncol=(length(vals)+1),nrow=0))
+colnames(res)<-c(vals,"Best")
+
+#tr<-rayDISC.example$tree
+#traits<-rayDISC.example$trait[,c(1,3)]
+
+for(p in notrees){
+	require(corHMM)
+	tr<-read.tree(file=paste(filepath,file.prefix,p,"_ages_treepl.tre",sep=""))
+	Age<-branching.times(tr)
+	for(m in 1:length(mods)){
+		if(m==1){
+			zz<-corHMM(phy=tr,dat=traits[,c(1,2)],rate.cat=m,node.states="marginal",root.p=c(1,0),n.cores=20,nstarts=100)		
+		}
+		if(m==2){
+			zz<-corHMM(phy=tr,dat=traits[,c(1,2)],rate.cat=m,node.states="marginal",root.p=c(1,0,1,0),n.cores=20,nstarts=100)		
+		}
+		zz$states<-cbind(zz$states,as.matrix(Age))
+		if(m==1){
+			colnames(zz$states)[3]<-"Age"
+		}
+		if(m==2){
+			colnames(zz$states)[5]<-"Age"
+		}
+		
+		write.table(zz$states,file=paste(filepath,file.prefix,p,"_",mods[m],"_ages_rootreallyfixed_corhmm_states.csv",sep=""),col.names=NA,sep=",")
+		write.tree(zz$phy,file=paste(filepath,file.prefix,p,"_",mods[m],"_ages_rootreallyfixed_corhmm_states.tre",sep=""))
+		if(m==1){
+			res[p,1]<-zz$loglik
+			res[p,2]<-zz$AIC
+			res[p,3]<-zz$AICc
+			res[p,4]<-zz$rate.cat
+			res[p,5]<-zz$solution[2,1]
+			res[p,6]<-zz$solution[1,2]
+			res[p,7]<-zz$index.mat[2,1]
+			res[p,8]<-zz$index.mat[1,2]
+			#if n.cores specified, this field is NULL
+			if(!is.null(zz$iterations)){
+				res[p,9]<-zz$iterations
+			}	
+			if(!is.null(zz$eigval)){
+				res[p,10]<-zz$eigval
+			}	
+			if(!is.null(zz$eigvect)){
+				res[p,11]<-zz$eigvect
+			}	
+		}
+		if(m==2){
+			res[p,12]<-zz$loglik
+			res[p,13]<-zz$AIC
+			res[p,14]<-zz$AICc
+			res[p,15]<-zz$rate.cat
+			res[p,16]<-zz$solution[2,1]
+			res[p,17]<-zz$solution[3,1]
+			res[p,18]<-zz$solution[1,2]
+			res[p,19]<-zz$solution[4,2]
+			res[p,20]<-zz$solution[1,3]
+			res[p,21]<-zz$solution[4,3]
+			res[p,22]<-zz$solution[2,4]
+			res[p,23]<-zz$solution[3,4]
+			res[p,24]<-zz$index.mat[2,1]
+			res[p,25]<-zz$index.mat[3,1]
+			res[p,26]<-zz$index.mat[1,2]
+			res[p,27]<-zz$index.mat[4,2]
+			res[p,28]<-zz$index.mat[1,3]
+			res[p,29]<-zz$index.mat[4,3]
+			res[p,30]<-zz$index.mat[2,4]
+			res[p,31]<-zz$index.mat[3,4]
+			if(!is.null(zz$iterations)){
+				res[p,32]<-zz$iterations
+			}	
+			if(!is.null(zz$eigval)){
+				res[p,33]<-zz$eigval
+			}	
+			if(!is.null(zz$eigvect)){
+				res[p,34]<-zz$eigvect
+			}	
+		}
+	}
+	res[p,35]<-mods[min(res[p,paste("AICc",mods,sep=".")])==res[p,paste("AICc",mods,sep=".")]]
+	write.csv(res,file=paste(filepath,"rootreallyfixed_corhmm_results.csv",sep=""))
+}
+
+##################################################################################################################################
+#############perform corHMM analyses on bootstrap-derived topologies timescaled with median node ages (boots_timescaled_w_median)
+##################################################################################################################################
+notrees<-"512"
+filepath<-"/home/mattnelsen/asco_phylo_all_medhts/individual_bs_trees/"
+file.prefix<-"bs_"
+traits<-read.csv(file=paste(filepath,"bad_idea_lichenization_for_corhmm.csv",sep=""),header=TRUE,stringsAsFactors=FALSE)
+mods<-c("1Rate","2Rate")
+vals1<-paste(c("loglik","AIC","AICc","rate.cat", "solution1to0","solution0to1","index.mat1to0","index.mat0to1","iterations","eigval","eigvect"),mods[1],sep=".")
+vals2<-paste(c("loglik","AIC","AICc","rate.cat",
+"solution1R1to0R1","solution0R2to0R1","solution0R1to1R1","solution1R2to1R1","solution0R1to0R2","solution1R2to0R2","solution1R1to1R2","solution0R2to1R2","index.mat1R1to0R1","index.mat0R2to0R1","index.mat0R1to1R1","index.mat1R2to1R1","index.mat0R1to0R2","index.mat1R2to0R2","index.mat1R1to1R2","index.mat0R2to1R2","iterations","eigval","eigvect"),mods[2],sep=".")
+vals<-c(vals1,vals2)
+res<-data.frame(matrix(ncol=(length(vals)+1),nrow=0))
+colnames(res)<-c(vals,"Best")
+
+#tr<-rayDISC.example$tree
+#traits<-rayDISC.example$trait[,c(1,3)]
+
+for(p in 1:notrees){
+	require(corHMM)
+	tr<-read.tree(file=paste(filepath,file.prefix,p,"_treepl.tre",sep=""))
+	Age<-branching.times(tr)
+	for(m in 1:length(mods)){
+		if(m==1){
+			zz<-corHMM(phy=tr,dat=traits[,c(1,2)],rate.cat=m,node.states="marginal",root.p=c(1,0),n.cores=12,nstarts=100)		
+		}
+		if(m==2){
+			zz<-corHMM(phy=tr,dat=traits[,c(1,2)],rate.cat=m,node.states="marginal",root.p=c(1,0,1,0),n.cores=12,nstarts=100)		
+		}
+		zz$states<-cbind(zz$states,as.matrix(Age))
+		if(m==1){
+			colnames(zz$states)[3]<-"Age"
+		}
+		if(m==2){
+			colnames(zz$states)[5]<-"Age"
+		}
+		
+		write.table(zz$states,file=paste(filepath,file.prefix,p,"_",mods[m],"_rootreallyfixed_corhmm_states.csv",sep=""),col.names=NA,sep=",")
+		write.tree(zz$phy,file=paste(filepath,file.prefix,p,"_",mods[m],"_rootreallyfixed_corhmm_states.tre",sep=""))
+		if(m==1){
+			res[p,1]<-zz$loglik
+			res[p,2]<-zz$AIC
+			res[p,3]<-zz$AICc
+			res[p,4]<-zz$rate.cat
+			res[p,5]<-zz$solution[2,1]
+			res[p,6]<-zz$solution[1,2]
+			res[p,7]<-zz$index.mat[2,1]
+			res[p,8]<-zz$index.mat[1,2]
+			#if n.cores specified, this field is NULL
+			if(!is.null(zz$iterations)){
+				res[p,9]<-zz$iterations
+			}	
+			if(!is.null(zz$eigval)){
+				res[p,10]<-zz$eigval
+			}	
+			if(!is.null(zz$eigvect)){
+				res[p,11]<-zz$eigvect
+			}	
+		}
+		if(m==2){
+			res[p,12]<-zz$loglik
+			res[p,13]<-zz$AIC
+			res[p,14]<-zz$AICc
+			res[p,15]<-zz$rate.cat
+			res[p,16]<-zz$solution[2,1]
+			res[p,17]<-zz$solution[3,1]
+			res[p,18]<-zz$solution[1,2]
+			res[p,19]<-zz$solution[4,2]
+			res[p,20]<-zz$solution[1,3]
+			res[p,21]<-zz$solution[4,3]
+			res[p,22]<-zz$solution[2,4]
+			res[p,23]<-zz$solution[3,4]
+			res[p,24]<-zz$index.mat[2,1]
+			res[p,25]<-zz$index.mat[3,1]
+			res[p,26]<-zz$index.mat[1,2]
+			res[p,27]<-zz$index.mat[4,2]
+			res[p,28]<-zz$index.mat[1,3]
+			res[p,29]<-zz$index.mat[4,3]
+			res[p,30]<-zz$index.mat[2,4]
+			res[p,31]<-zz$index.mat[3,4]
+			if(!is.null(zz$iterations)){
+				res[p,32]<-zz$iterations
+			}	
+			if(!is.null(zz$eigval)){
+				res[p,33]<-zz$eigval
+			}	
+			if(!is.null(zz$eigvect)){
+				res[p,34]<-zz$eigvect
+			}	
+		}
+	}
+	res[p,35]<-mods[min(res[p,paste("AICc",mods,sep=".")])==res[p,paste("AICc",mods,sep=".")]]
+	write.csv(res,file=paste(filepath,"rootreallyfixed_corhmm_results.csv",sep=""))
+}
+
+
+##################################################################################################################################
+#############Rperform corHMM analyses on 100 bootstrap-derived topologies timescaled with posterior sample (50) of trees (boots_timescaled_w_sample)
+##################################################################################################################################
+#first batch
+notrees<-c(228, 364, 1260, 1599, 2030, 2701, 2791, 3637, 3914, 4199, 4384, 5042, 5097, 5143, 5220, 5434, 5488, 5568, 6492, 7158, 7434, 7438, 7830, 7928, 8222)
+filepath<-"/home/mattnelsen/asco_phylo_ml_100medhts/asco_phylo_boot_25medhts/"
+file.prefix<-"bs_"
+traits<-read.csv(file=paste(filepath,"bad_idea_lichenization_for_corhmm.csv",sep=""),header=TRUE,stringsAsFactors=FALSE)
+mods<-c("1Rate","2Rate")
+vals1<-paste(c("loglik","AIC","AICc","rate.cat", "solution1to0","solution0to1","index.mat1to0","index.mat0to1","iterations","eigval","eigvect"),mods[1],sep=".")
+vals2<-paste(c("loglik","AIC","AICc","rate.cat",
+"solution1R1to0R1","solution0R2to0R1","solution0R1to1R1","solution1R2to1R1","solution0R1to0R2","solution1R2to0R2","solution1R1to1R2","solution0R2to1R2","index.mat1R1to0R1","index.mat0R2to0R1","index.mat0R1to1R1","index.mat1R2to1R1","index.mat0R1to0R2","index.mat1R2to0R2","index.mat1R1to1R2","index.mat0R2to1R2","iterations","eigval","eigvect"),mods[2],sep=".")
+vals<-c("Tree",vals1,vals2)
+res<-data.frame(matrix(ncol=(length(vals)+1),nrow=0))
+colnames(res)<-c(vals,"Best")
+
+#tr<-rayDISC.example$tree
+#traits<-rayDISC.example$trait[,c(1,3)]
+
+for(jv in 1:100){
+	qc<-0
+	for(p in notrees){
+		qc<-qc+1
+		require(corHMM)
+		tr<-read.tree(file=paste(filepath,file.prefix,jv,"_w_",p,"_ages_treepl.tre",sep=""))
+		Age<-branching.times(tr)
+		res[qc,1]<-p
+		for(m in 1:length(mods)){
+			if(m==1){
+				zz<-corHMM(phy=tr,dat=traits[,c(1,2)],rate.cat=m,node.states="marginal",root.p=c(1,0),n.cores=20,nstarts=100)		
+			}
+			if(m==2){
+				zz<-corHMM(phy=tr,dat=traits[,c(1,2)],rate.cat=m,node.states="marginal",root.p=c(1,0,1,0),n.cores=20,nstarts=100)		
+			}
+			zz$states<-cbind(zz$states,as.matrix(Age))
+			if(m==1){
+				colnames(zz$states)[3]<-"Age"
+			}
+			if(m==2){
+				colnames(zz$states)[5]<-"Age"
+			}
+			write.table(zz$states,file=paste(filepath,file.prefix,jv,"_w_",p,"_",mods[m],"_ages_rootreallyfixed_corhmm_states.csv",sep=""),col.names=NA,sep=",")
+			write.tree(zz$phy,file=paste(filepath,file.prefix,jv,"_w_",p,"_",mods[m],"_ages_rootreallyfixed_corhmm_states.tre",sep=""))
+			if(m==1){
+				res[qc,2]<-zz$loglik
+				res[qc,3]<-zz$AIC
+				res[qc,4]<-zz$AICc
+				res[qc,5]<-zz$rate.cat
+				res[qc,6]<-zz$solution[2,1]
+				res[qc,7]<-zz$solution[1,2]
+				res[qc,8]<-zz$index.mat[2,1]
+				res[qc,9]<-zz$index.mat[1,2]
+				#if n.cores specified, this field is NULL
+				if(!is.null(zz$iterations)){
+					res[qc,10]<-zz$iterations
+				}	
+				if(!is.null(zz$eigval)){
+					res[qc,11]<-zz$eigval
+				}	
+				if(!is.null(zz$eigvect)){
+					res[qc,12]<-zz$eigvect
+				}	
+			}
+			if(m==2){
+				res[qc,13]<-zz$loglik
+				res[qc,14]<-zz$AIC
+				res[qc,15]<-zz$AICc
+				res[qc,16]<-zz$rate.cat
+				res[qc,17]<-zz$solution[2,1]
+				res[qc,18]<-zz$solution[3,1]
+				res[qc,19]<-zz$solution[1,2]
+				res[qc,20]<-zz$solution[4,2]
+				res[qc,21]<-zz$solution[1,3]
+				res[qc,22]<-zz$solution[4,3]
+				res[qc,23]<-zz$solution[2,4]
+				res[qc,24]<-zz$solution[3,4]
+				res[qc,25]<-zz$index.mat[2,1]
+				res[qc,26]<-zz$index.mat[3,1]
+				res[qc,27]<-zz$index.mat[1,2]
+				res[qc,28]<-zz$index.mat[4,2]
+				res[qc,29]<-zz$index.mat[1,3]
+				res[qc,30]<-zz$index.mat[4,3]
+				res[qc,31]<-zz$index.mat[2,4]
+				res[qc,32]<-zz$index.mat[3,4]
+				if(!is.null(zz$iterations)){
+					res[qc,33]<-zz$iterations
+				}	
+				if(!is.null(zz$eigval)){
+					res[qc,34]<-zz$eigval
+				}	
+				if(!is.null(zz$eigvect)){
+					res[qc,35]<-zz$eigvect
+				}	
+			}
+		}
+		res[qc,36]<-mods[min(res[qc,paste("AICc",mods,sep=".")])==res[qc,paste("AICc",mods,sep=".")]]
+		write.csv(res,file=paste(filepath,file.prefix,jv,"_rootreallyfixed_corhmm_results.csv",sep=""))
+	}
+}
+
+#second batch
+notrees<-c(153, 244, 1165, 1193, 1423, 1770, 2206, 2451, 2635, 3493, 3602, 3699, 3715, 4229, 4491, 4853, 4976, 4986, 6445, 6586, 6776, 6943, 7081, 7172, 8159)
+filepath<-"/home/mattnelsen/asco_phylo_ml_100medhts/asco_phylo_boot_25medhts/"
+file.prefix<-"bs_"
+traits<-read.csv(file=paste(filepath,"bad_idea_lichenization_for_corhmm.csv",sep=""),header=TRUE,stringsAsFactors=FALSE)
+mods<-c("1Rate","2Rate")
+vals1<-paste(c("loglik","AIC","AICc","rate.cat", "solution1to0","solution0to1","index.mat1to0","index.mat0to1","iterations","eigval","eigvect"),mods[1],sep=".")
+vals2<-paste(c("loglik","AIC","AICc","rate.cat",
+"solution1R1to0R1","solution0R2to0R1","solution0R1to1R1","solution1R2to1R1","solution0R1to0R2","solution1R2to0R2","solution1R1to1R2","solution0R2to1R2","index.mat1R1to0R1","index.mat0R2to0R1","index.mat0R1to1R1","index.mat1R2to1R1","index.mat0R1to0R2","index.mat1R2to0R2","index.mat1R1to1R2","index.mat0R2to1R2","iterations","eigval","eigvect"),mods[2],sep=".")
+vals<-c("Tree",vals1,vals2)
+res<-data.frame(matrix(ncol=(length(vals)+1),nrow=0))
+colnames(res)<-c(vals,"Best")
+
+#tr<-rayDISC.example$tree
+#traits<-rayDISC.example$trait[,c(1,3)]
+
+for(jv in 1:100){
+	qc<-0
+	for(p in notrees){
+		qc<-qc+1
+		require(corHMM)
+		tr<-read.tree(file=paste(filepath,file.prefix,jv,"_w_",p,"_ages_treepl.tre",sep=""))
+		Age<-branching.times(tr)
+		res[qc,1]<-p
+		for(m in 1:length(mods)){
+			if(m==1){
+				zz<-corHMM(phy=tr,dat=traits[,c(1,2)],rate.cat=m,node.states="marginal",root.p=c(1,0),n.cores=12,nstarts=100)		
+			}
+			if(m==2){
+				zz<-corHMM(phy=tr,dat=traits[,c(1,2)],rate.cat=m,node.states="marginal",root.p=c(1,0,1,0),n.cores=12,nstarts=100)		
+			}
+			zz$states<-cbind(zz$states,as.matrix(Age))
+			if(m==1){
+				colnames(zz$states)[3]<-"Age"
+			}
+			if(m==2){
+				colnames(zz$states)[5]<-"Age"
+			}
+			write.table(zz$states,file=paste(filepath,file.prefix,jv,"_w_",p,"_",mods[m],"_ages_rootreallyfixed_corhmm_states.csv",sep=""),col.names=NA,sep=",")
+			write.tree(zz$phy,file=paste(filepath,file.prefix,jv,"_w_",p,"_",mods[m],"_ages_rootreallyfixed_corhmm_states.tre",sep=""))
+			if(m==1){
+				res[qc,2]<-zz$loglik
+				res[qc,3]<-zz$AIC
+				res[qc,4]<-zz$AICc
+				res[qc,5]<-zz$rate.cat
+				res[qc,6]<-zz$solution[2,1]
+				res[qc,7]<-zz$solution[1,2]
+				res[qc,8]<-zz$index.mat[2,1]
+				res[qc,9]<-zz$index.mat[1,2]
+				#if n.cores specified, this field is NULL
+				if(!is.null(zz$iterations)){
+					res[qc,10]<-zz$iterations
+				}	
+				if(!is.null(zz$eigval)){
+					res[qc,11]<-zz$eigval
+				}	
+				if(!is.null(zz$eigvect)){
+					res[qc,12]<-zz$eigvect
+				}	
+			}
+			if(m==2){
+				res[qc,13]<-zz$loglik
+				res[qc,14]<-zz$AIC
+				res[qc,15]<-zz$AICc
+				res[qc,16]<-zz$rate.cat
+				res[qc,17]<-zz$solution[2,1]
+				res[qc,18]<-zz$solution[3,1]
+				res[qc,19]<-zz$solution[1,2]
+				res[qc,20]<-zz$solution[4,2]
+				res[qc,21]<-zz$solution[1,3]
+				res[qc,22]<-zz$solution[4,3]
+				res[qc,23]<-zz$solution[2,4]
+				res[qc,24]<-zz$solution[3,4]
+				res[qc,25]<-zz$index.mat[2,1]
+				res[qc,26]<-zz$index.mat[3,1]
+				res[qc,27]<-zz$index.mat[1,2]
+				res[qc,28]<-zz$index.mat[4,2]
+				res[qc,29]<-zz$index.mat[1,3]
+				res[qc,30]<-zz$index.mat[4,3]
+				res[qc,31]<-zz$index.mat[2,4]
+				res[qc,32]<-zz$index.mat[3,4]
+				if(!is.null(zz$iterations)){
+					res[qc,33]<-zz$iterations
+				}	
+				if(!is.null(zz$eigval)){
+					res[qc,34]<-zz$eigval
+				}	
+				if(!is.null(zz$eigvect)){
+					res[qc,35]<-zz$eigvect
+				}	
+			}
+		}
+		res[qc,36]<-mods[min(res[qc,paste("AICc",mods,sep=".")])==res[qc,paste("AICc",mods,sep=".")]]
+		write.csv(res,file=paste(filepath,file.prefix,jv,"_rootreallyfixed_corhmm_results_secondbatch.csv",sep=""))
+	}
+}
