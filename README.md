@@ -1,0 +1,3 @@
+# pha-li
+
+Five files are included. The corHMM_analyses.r file reads trees and performs a 1 and 2 state corHMM analysis on each tree, and summarizes results. The summarizing_gains_losses.r file then reads result of corHMM analyses (analyses with best AICc value is selected) and determines where (node) and when (age) changes in the most-likely state occur and summarizes the number of transitions to and from a state. The file crown_ages_scrubbed.R was used to estimate ages of specific clades and determine the density of samples above or below specific age estimates. Finally, the Main_Figures_3april2019_scrubbed.r and Supplemental_Figures_3april2019_scrubbed.r files were used to generate figures in the main manuscript and the supplement.
