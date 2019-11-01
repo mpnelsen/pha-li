@@ -1,0 +1,129 @@
+﻿Class,Order,Family,Genus,Species,"Number, etc.",nuSSU,nuLSU,RPB1,RPB2,mtSSU,TEF1a,edited_name
+Arthoniomycetes,Arthoniales,Arthoniaceae,Arthonia,dispersa,UPSC 2583,AY571379,AY571381,,,AY571383,,Arthonia_dispersa
+Arthoniomycetes,Arthoniales,Chrysothrichaceae,Chrysothrix,caesia,Amtoft s.n. (DUKE) (AFTOL-ID 775),,FJ469668,FJ772241,FJ469670,FJ469671,FJ469669,Chrysothrix_caesia
+Arthoniomycetes,Arthoniales,Chrysothrichaceae,Chrysothrix,chrysophthalma,Ertz 10927 (BR),,HQ454519,,HQ454661,KF176966,,Chrysothrix_chrysophthalma
+Arthoniomycetes,Arthoniales,Lecanographaceae,Alyxoria,ochrocheila,Ertz 8624 (BR),,EU704099,,EU704035,EU704071,,Alyxoria_ochrocheila
+Arthoniomycetes,Arthoniales,Opegraphaceae,Combea,mollusca,Tehler 7725,AY571380,AY571382,,DQ987626,AY571384,,Combea_mollusca
+Arthoniomycetes,Arthoniales,Roccellaceae,Dendrographa,decolorans,Ertz 5003 (BR/DUKE) (AFTOL-ID 307); F66100 (S),AY548809,AY548815,,DQ883715,AY548816,DQ883725,Dendrographa_decolorans
+Arthoniomycetes,Arthoniales,Roccellographaceae,Roccellographa,cretacea,Mies 1981 Bc. (Printzen) (AFTOL-ID 93); Mies 239b2 (S),DQ883705,DQ883696,DQ883716,DQ883713,FJ772240,DQ883733,Roccellographa_cretacea
+Arthoniomycetes,Lichenostigmatales,Phaeococcomycetaceae,Phaeococcomycetaceae,sp TRN529,,GU324016,GU323987,,,GU324050,,Phaeococcomycetaceae_sp_TRN529
+Arthoniomycetes,Lichenostigmatales,Phaeococcomycetaceae,Phaeococcomycetaceae,sp TNR456,TRN 456,GU324015,GU323986,GU324065,,GU324049,,Phaeococcomycetaceae_sp_TRN456
+Coniocybomycetes,Coniocybales,Coniocybaceae,Chaenotheca,furfuracea,,JX000068,JX000087,JX000137,,JX000121,,Chaenotheca_furfuracea
+Coniocybomycetes,Coniocybales,Coniocybaceae,Sclerophora,farinacea,,JX000078,JX000095,JX000144,,JX000130,,Sclerophora_farinacea
+Dothideomycetes,Botryosphaeriales,Botryosphaeriaceae,Botryosphaeria,dothidea,CBS 115476 (AFTOL-ID 946),DQ677998,DQ678051,GU357802,DQ677944,FJ190612,DQ767637,Botryosphaeria_dothidea
+Dothideomycetes,Capnodiales,Davidiellaceae,Cladosporium,cladosporioides,CBS 170.54,DQ678004,,GU357790,DQ677952,FJ190628,DQ677898,Cladosporium_cladosporioides
+Dothideomycetes,Capnodiales,Mycosphaerellaceae,Ramularia,endophylla,CBS 113265 (AFTOL-ID 942),DQ471017,DQ470968,DQ471165,DQ470920,FJ190611,DQ471092,Ramularia_endophylla
+Dothideomycetes,Dothideales,Dothideaceae,Dothidea,insculpta,CBS 189.58 (AFTOL-ID 359/921),DQ247810,DQ247802,DQ471154,AF107800,FJ190602,DQ471081,Dothidea_insculpta
+Dothideomycetes,Incertae sedis,Incertae sedis,Tyrannosorus,pinicola,CBS 124.88 (AFTOL-ID 1235),DQ471025,DQ470974,DQ471171,,FJ190620,DQ471098,Tyrannosorus_pinicola
+Dothideomycetes,Incertae sedis,Incertae Sedis,Coniosporium,apollonis,CBS 109860,GU250920,GU250899,GU250962,GU250953,GU250910,,Coniosporium_apollinis
+Dothideomycetes,Monoblastiales,Monoblastiaceae,Anisomeridium,ubianum MPN94,,JN887379,GU327709,,,GU327682,JN887421,Anisomeridium_ubianum
+Dothideomycetes,Monoblastiales,Monoblastiaceae,Trypetheliopsis,kalbii MPN243,,JN887391 ,JN887406 ,,,GU327703,JN887435 ,Trypetheliopsis_kalbii
+Dothideomycetes,Monoblastiales,Monoblastiaceae,Acrocordia,subglobosa HTL940,,JN887373 ,JN887392 ,,YYY??4dec2010,GU327681,JN887417 ,Acrocordia_subglobosa
+Dothideomycetes,Myriangiales,Myriangiaceae,Myriangium,duriaei,CBS 260.36 (AFTOL-ID 1304),AY016347,DQ678059,DQ870956,DQ677954,AY571389,DQ677900,Myriangium_duriaei
+Dothideomycetes,Patellariales,Patellariaceae,Hysteropatella,clavispora,CBS 247.34 (AFTOL-ID 1254),DQ678006,AY541493,,DQ677955,AY571388,DQ677901,Hysteropatella_clavispora
+Dothideomycetes,Pleosporales,Incertae sedis,Heleiosa,barbatula,JK 5548I,GU479753,GU479787,,,,,Heleiosa_barbatula
+Dothideomycetes,Pleosporales,Leptosphaeriaceae,Coniothyrium,palmarum,CBS 400.71 (AFTOL-ID 1379),DQ678008,,,DQ677956,FJ190638,DQ677903,Coniothyrium_palmarum
+Dothideomycetes,Strigulales,Strigulaceae,Strigula,nemathora MPN72,,JN887389 ,JN887405 ,,YYY??4dec2010,GU327701,JN887433 ,Strigula_nemathora
+Dothideomycetes,Strigulales,Strigulaceae,Phyllobathelium,anomalum MPN242,,JN887386 ,GU327722,,YYY??4dec2010,GU327698,JN887430 ,Phyllobathelium_anomalum
+Dothideomycetes,Strigulales,Strigulaceae,Strigula,jamesii MPN548,,JN887388 ,JN887404 ,,,JN887416 ,JN887432 ,Strigula_jamesii
+Dothideomycetes,Trypetheliales,Trypetheliaceae,Astrothelium,versicolor MPN47,,JN887380 ,GU327713,,YYY??4dec2010,GU327689,GU327731,Astrothelium_versicolor
+Dothideomycetes,Trypetheliales,Trypetheliaceae,Pseudopyrenula,subgregaria MPN106,,,GU327724,,YYY??4dec2010,GU327699,JN887431 ,Pseudopyrenula_subgregaria
+Dothideomycetes,Trypetheliales,Trypetheliaceae,Trypethelium,eluteriae MPN111,,,GU327726,,,GU327704,JN887436 ,Trypethelium_eluteriae
+Dothideomycetes,Trypetheliales,Trypetheliaceae,Mycomicrothelia,oleosa MPN95,,,GU327721,,,GU327697,JN887429 ,Mycomicrothelia_oleosa
+Dothideomycetes,Trypetheliales,Trypetheliaceae,Mycomicrothelia,hemisphaerica MPN102,,JN887384 ,GU327719,,,GU327695,JN887427 ,Mycomicrothelia_hemisphaerica
+Dothideomycetes,Trypetheliales,Trypetheliaceae,Mycomicrothelia,minutula MPN 567,,,,,,XXXXX,,Mycomicrothelia_minutula
+Dothideomycetes,Trypetheliales,Trypetheliaceae,Arthopyrenia,planorbis,,,JN872352 ,,,JN872350 ,JN872355 ,Arthopyrenia_cf_planorbis
+Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Capronia,pilosella,DAOM 216837 (AFTOL-ID 657),DQ823106,DQ823099,DQ840554,DQ840561,FJ225725,DQ840565,Capronia_pilosella
+Eurotiomycetes,Chaetothyriales,Herpotrichiellaceae,Exophiala,dermatitidis,WUC176 (AFTOL-ID 668); CBS 668,DQ823107,DQ823100,DQ840555,DQ840562,FJ225740,DQ840566,Exophiala_dermatitidis
+Eurotiomycetes,Coryneliales,Coryneliaceae,Caliciopsis,orientalis,CBS 138.64 (AFTOL-ID 1911),DQ471039,DQ470987,DQ471185,DQ470939,FJ190654,DQ471111,Caliciopsis_orientalis
+Eurotiomycetes,Eurotiales,Aspergillaceae,Aspergillus,fumigatus,JCM1738; ATCC 1022; UPSC 1771; Af293 ,AB008401,AY660917,XM_747744,XM_741647,AY291258,XM_745295,Aspergillus_fumigatus
+Eurotiomycetes,Eurotiales,Thermoascaceae,Byssochlamys,nivea,CBS 100.11; UW-BFCC,FJ358345,AY176750,FJ358408,AF107794,FJ225775,,Byssochlamys_nivea
+Eurotiomycetes,Mycocaliciales,Mycocaliciaceae,Sphinctrina,turbinata,(AFTOL-ID 1721),EF413631,EF413632,,EF413633,FJ713611,,Sphinctrina_turbinata
+Eurotiomycetes,Mycocaliciales,Mycocaliciaceae,Mycocalicium,subtile,Wedin 6353 (S); Wedin 6889 (UPS); Wedin 8492 (S),JX000072,AY853379,JX000141,,AY853330,,Mycocalicium_subtile
+Eurotiomycetes,Pyrenulales,Celotheliaceae,Celothelium,cinchonarum,Lucking 17105f (F),,DQ329020,,,DQ328993,,Celothelium_cinchonarum
+Eurotiomycetes,Pyrenulales,Pyrenulaceae,Anthracothecium,nanum,(AFTOL-ID 1649),,FJ358271,FJ358403,,FJ225773,,Anthracothecium_nanum
+Eurotiomycetes,Pyrenulales,Pyrenulaceae,Lithothelium,septumseptatum,(AFTOL-ID 12),,AY584638,,,AY584620,,Lithothelium_septemseptatum
+Eurotiomycetes,Pyrenulales,Pyrenulaceae,Pyrenula,pseudobufonia,Reeb VR 14-VI-02/5 (Duke) (AFTOL-ID 387),AY641001,AY640962,DQ840558,AY641068,AY584720,,Pyrenula_pseudobufonia
+Eurotiomycetes,Pyrenulales,Pyrenulaceae,Pyrenula,cruenta,Lutzoni 98.06.17-4 (DUKE) (AFTOL-ID 386),AF279406,AF279407,,AY641067,AY584719,,Pyrenula_cruenta
+Eurotiomycetes,Pyrenulales,Pyrenulaceae,Pyrgillus,javanicus,"Lutzoni, Miadlikowska & Lücking 03.24.03-9 (DUKE) (AFTOL-ID 342)",DQ823110,DQ823103,,DQ842009,FJ225774,,Pyrgillus_javanicus
+Eurotiomycetes,Verrucariales,Verrucariaceae,Dermatocarpon,miniatum,Cole 9702 (DUKE) (AFTOL-ID 91),AY584668,AY584644,DQ782821,DQ782863,AY584616,DQ782893,Dermatocarpon_miniatum
+Eurotiomycetes,Verrucariales,Verrucariaceae,Endocarpon,pallidulum,Joneson 4028 (DUKE) (AFTOL-ID 671),DQ823104,DQ823097,DQ840552,DQ840559,FJ225674,,Endocarpon_pallidulum
+Eurotiomycetes,Verrucariales,Verrucariaceae,Staurothele,frustulenta,Aptroot 53935 (DUKE) (AFTOL-ID 697),DQ823105,DQ823098,DQ840553,DQ840560,FJ225702,,Staurothele_frustulenta
+Eurotiomycetes,Verrucariales,Verrucariaceae,Verrucula,inconnexaria,Gueidan 652 (MARSSJ) (AFTOL-ID 2305),EF689890,EF643819,EF689819,,FJ225716,,Verrucula_inconnexaria
+Eurotiomycetes,Verrucariales,Verrucariaceae,Wahlenbergiella,mucosa,Gueidan 687 (AFTOL-ID 2264),EF689877,EF643802,EF689804,,FJ225720,,Wahlenbergiella_mucosa
+Geoglossomycetes,Geoglossales,Geoglossaceae,Geoglossum,nigritum,Spatafora 03-08 (OSC) (AFTOL-ID 56),AY544694,AY544650,DQ471115,DQ470879,AY544740,DQ471044,Geoglossum_nigritum
+Geoglossomycetes,Geoglossales,Geoglossaceae,Trichoglossum,hirsutum,Hosaka KH03232003-1 (OSC) (AFTOL-ID 64),AY544697,AY544653,DQ471119,DQ470881,,DQ471049,Trichoglossum_hirsutum
+Lecanoromycetes,Acarosporales,Acarosporaceae,Acarospora,schleicheri,Reeb VR 5-VII-98/30 (DUKE),AY640986,AY640945,DQ782859,AY641026,AY584694,,Acarospora_schleicheri
+Lecanoromycetes,Acarosporales,Acarosporaceae,Pleopsidium,chlorophanum,Reeb VR8-VIII-02/8 (DUKE) (AFTOL-ID 1004),DQ525541,DQ842017,DQ782858,DQ525442,DQ991756,DQ782920,Pleopsidium_chlorophanum
+Lecanoromycetes,Caliciales,Caliciaceae,Pyxine,subcinerea,Amtoft 2060 (DUKE) (AFTOL-ID 686),DQ883793,DQ883802,DQ883745,DQ883758,DQ912292,DQ883777,Pyxine_subcinerea
+Lecanoromycetes,Caliciales,Physciaceae,Phaeophyscia,orbicularis,Ertz 7648 (BR) (AFTOL-ID 1308),DQ912320,DQ912343,DQ912369,DQ912392,DQ912289,,Phaeophyscia_orbicularis
+Lecanoromycetes,Lecanorales,Cladoniaceae,Cladonia,caroliniana,Lutzoni & Yahr 01.26.03.2 (DUKE) (AFTOL-ID 3),AY584664,AY584640,DQ782816,AY584684,AY584614,DQ782888,Cladonia_caroliniana
+Lecanoromycetes,Lecanorales,Cladoniaceae,Pycnothelia,papillare,,DQ983481,DQ986800,DQ986856,DQ992473,DQ986783,,Pycnothelia_papillaria
+Lecanoromycetes,Lecanorales,Lecanoraceae,Lecanora,hybocarpa,Lutzoni et al. 03.07.04-2 (DUKE) (AFTOL-ID 639),DQ782883,DQ782910,DQ782829,DQ782871,DQ912273,DQ782901,Lecanora_hybocarpa
+Lecanoromycetes,Lecanorales,Lecanoraceae,Miriquidica,garovaglii,Ekman s.n. (BG),,AY756357,AY756420,,AY567711,,Miriquidica_garovaglii
+Lecanoromycetes,Lecanorales,Parmeliaceae,Flavoparmelia,caperata,Lutzoni 01.26.03 (DUKE) (AFTOL-ID 2),AY584663,AY584639,DQ883778,,AY584617,DQ883763,Flavoparmelia_caperata
+Lecanoromycetes,Lecanorales,Parmeliaceae,Parmelia,saxatilis,Wedin 5051 (BM); Wedin 7091 (UPS),AF117985,AY300849,DQ923695,,AY340514,,Parmelia_saxatilis
+Lecanoromycetes,Lecanorales,Parmeliaceae,Hypogymnia,physodes,(AFTOL-ID 195); (AFTOL-ID 1966),DQ973006,DQ973030,JQ301738,DQ973091,DQ972978,,Hypogymnia_physodes
+Lecanoromycetes,Lecanorales,Parmeliaceae,Cornicularia,normoerica,?; Hatten et al. 9302 (UPS);,AF140235,DQ923661,DQ923687,,DQ923632,,Cornicularia_normoerica
+Lecanoromycetes,Lecanorales,Parmeliaceae,Evernia,prunastri,?; OSC56404; Schmitt 6.Mar.2005 (F); Wiklund 2000 (UPS);,AF117987,AF107562,DQ870944,,DQ923634,,Evernia_prunastri
+Lecanoromycetes,Lecanorales,Parmeliaceae,Dactylina,arctica,(AFTOL-ID 225),DQ983484,DQ986802,DQ986859,DQ992475,DQ986786,,Dactylina_arctica
+Lecanoromycetes,Lecanorales,Parmeliaceae,Alectoria,ochroleuca,(AFTOL-ID 209); Wedin Aug. 1998 (BM),DQ983483,DQ899288,DQ986858,DQ992474,DQ986785,,Alectoria_ochroleuca
+Lecanoromycetes,Lecanorales,Parmeliaceae,Bryoria,trichodes,,DQ986740,DQ986752,DQ986824,DQ992439,DQ986896,,Bryoria_trichodes
+Lecanoromycetes,Lecanorales,Psoraceae,Psora,decipiens,(AFTOL-ID 1032),DQ986710,DQ986760,,DQ992447,,,Psora_decipiens
+Lecanoromycetes,Lecanorales,Psoraceae,Protoblastenia,calva,C. Gueidan CG659 (DUKE) (AFTOL-ID 992),JQ301653,JQ301601,DQ986830,DQ992446,DQ986904,,Protoblastenia_calva
+Lecanoromycetes,Lecanorales,Psoraceae,Micarea,sylvicola,Ekman 3629 (BG),,AY756331,AY756392,,AY567769,,Micarea_sylvicola
+Lecanoromycetes,Lecanorales,Ramalinaceae,Bacidia,schweinitzii,Lutzoni et al. 03.07.04-3 (DUKE) (AFTOL-ID 642),,DQ782911,DQ782830,DQ782872,DQ972998,DQ782902,Bacidia_schweinitzii
+Lecanoromycetes,Lecanorales,Squamarinaceae,Squamarina,cartilaginea,(AFTOL-ID 1281),DQ986720,DQ986763,DQ986833,DQ992449,,,Squamarina_cartilaginea
+Lecanoromycetes,Lecanorales,Stereocaulaceae,Lepraria,lobificans,(AFTOL-ID 325),DQ986733,DQ986768,DQ986837,DQ992454,DQ986887,,Lepraria_lobificans
+Lecanoromycetes,Lecanorales,Stereocaulaceae,Stereocaulon,paschale,,AF140236,AF279413,GQ259046,AY641078,AY584726,,Stereocaulon_paschale
+Lecanoromycetes,Ostropales,Coeonogoniaceae,Coenogonium,luteum,Ryan 31430 (ASU); (AFTOL-ID 352),,AF279387,,AY641038,AY584699,,Coenogonium_luteum
+Lecanoromycetes,Ostropales,Graphidaceae,Diploschistes,cinereocaesius,"Lutzoni, Miadlikowska & Lücking 03.23.03-24 (DUKE) (AFTOL-ID 328)",DQ883790,DQ883799,DQ883742,DQ883755,DQ912306,DQ883774,Diploschistes_cinereocaesius
+Lecanoromycetes,Ostropales,Graphidaceae,Diploschistes,ocellatus,"2.6.2003, Lumbsch (F)?",NG_013126,AY605077,DQ366252,DQ366253,,DQ366251,Diploschistes_ocellatus
+Lecanoromycetes,Ostropales,Graphidaceae,Diploschistes,actinostomus,Lumbsch 3089,,KF688496,KF688530,KF688546,KF688510,,Diploschistes_actinostomus
+Lecanoromycetes,Ostropales,Graphidaceae,Acanthotrema,sp.,Mercado 290,,,KF688526,KF688542,KF688506,,Acanthotrema_sp
+Lecanoromycetes,Ostropales,Graphidaceae,Fissurina,insidiosa,Lendemer 4793 (DUKE) (AFTOL-ID 1662),DQ973022,DQ973045,,DQ973083,DQ972995,,Fissurina_insidiosa
+Lecanoromycetes,Ostropales,Graphidaceae,Myriotrema,pycnoporellum,Luecking 26545(F),,HQ639658,KC020299,KC020277,HQ639584,,Myriotrema_pycnoporellum
+Lecanoromycetes,Ostropales,Graphidaceae,Phaeographis,intricans,Kalb 38864,,JX421602,,JX420924,JX421254,,Phaeographis_intricans
+Lecanoromycetes,Ostropales,Graphidaceae,Thelotrema,lepadinum,(AFTOL-ID 83); Printzen 5745 (HB Printzen),,AY300866,DQ973067,DQ973085,DQ972997,,Thelotrema_lepadinum
+Lecanoromycetes,Ostropales,Gyalectaceae,Gyalecta,ulmi,Scheidegger 30.05.1998 (DUKE) (AFTOL-ID 362),AF465464,AF465463,,AY641044,AY584706,,Gyalecta_ulmi
+Lecanoromycetes,Ostropales,Odontrotremataceae,Odontotrema,phacidioides,Palice 11440 (S),,HM244770,,HM244803,HM244749,,Odontotrema_phacidioides
+Lecanoromycetes,Ostropales,Phlyctidaceae,Phlyctis,agelaea,Nordin 3028 (UPS),,AY853381,,,AY853332,,Phlyctis_agelaea
+Lecanoromycetes,Ostropales,Phlyctidaceae,Phlyctis,argena,(AFTOL-ID 1375),,DQ986771,,DQ992458,DQ986880,,Phlyctis_argena
+Lecanoromycetes,Ostropales,Phlyctidaceae,Phlyctis,brasiliensis,,xxxx,xxxx,,,xxxx,,Phlyctis_brasiliensis
+Lecanoromycetes,Ostropales,Sagiolechiaceae,Sagiolechia,protuberans,Nordin 5893 (UPS),,HM244775,,HM244812,HM244757,,Sagiolechia_protuberans
+Lecanoromycetes,Ostropales,Stictidaceae,Stictis,radiata,"Malloch (pers. Collection); Platt 222 (OSC, DUKE); Palice (ESS 21520)",U20610,AF356663,,AY641079,AY300914,,Stictis_radiata
+Lecanoromycetes,Peltigerales,Lobariaceae,Lobaria,scrobiculata,Miadlikowska 1.1 LOSC (DUKE) (AFTOL-ID 128),AY584679,AY584655,DQ883736,DQ883749,AY584621,DQ883768,Lobaria_scrobiculata
+Lecanoromycetes,Peltigerales,Lobariaceae,Pseudocyphellaria,anomala,(AFTOL-ID 132),DQ883785,DQ883794,DQ883737,DQ883750,DQ912298,DQ883769,Pseudocyphellaria_anomala
+Lecanoromycetes,Peltigerales,Lobariaceae,Sticta,beauvoisii,(AFTOL-ID 1242),DQ986713,DQ986769,,DQ992456,DQ986867,,Sticta_beauvoisii
+Lecanoromycetes,Peltigerales,Lobariaceae,Pseudocyphellaria,aurata,Purvis et al. 7/5/1995 (BM),,AY340562,GQ259082,,AY340520,,Pseudocyphellaria_aurata
+Lecanoromycetes,Peltigerales,Lobariaceae,Pseudocyphellaria,divulsa,Wedin 6012 (BM),,AY340564 ,GQ259083,,AY340522 ,,Pseudocyphellaria_divulsa
+Lecanoromycetes,Peltigerales,Nephromataceae,Nephroma,parile,(AFTOL-ID 131),AY584680,AY584656,DQ973061,DQ973075,AY584625,,Nephroma_parile
+Lecanoromycetes,Peltigerales,Peltigeraceae,Peltigera,membranacea,,JX181776,JX181776,JN596954,AY485629,NC_016957,JX181771,Peltigera_membranacea
+Lecanoromycetes,Teloschistales,Brigantiaeaceae,Brigantiaea,cf. leucoxantha,"P. & B. v.d. Boom 40691, D. & M. Brand, E. Serusiaux (P.v.d. Boom Herb.)",JQ301602,JQ301542,JQ301703,,JQ301477,,Brigantiaea_cf_leucoxantha
+Lecanoromycetes,Teloschistales,Letrouitiaceae,Letrouitia,domingensis,Lücking 15027 (DUKE) (AFTOL-ID 102),AY584672,AY584648,DQ883734,DQ883747,AY584619,DQ883765,Letrouitia_domingensis
+Lecanoromycetes,Teloschistales,Megalosporaceae,Sipmaniella,sulphureofusca,Sipman 53087 (B),JQ301624,JQ301568,,,JQ301504,,Sipmaniella_sulphureofusca
+Lecanoromycetes,Teloschistales,Megalosporaceae,Megalospora,tuberculosa,(AFTOL-ID 107),AY584674,AY584650,DQ883781,DQ883761,AY584623,EU369176,Megalospora_tuberculosa
+Lecanoromycetes,Teloschistales,Teloschistaceae,Xanthoria,polycarpa,(AFTOL-ID 200),DQ912328,DQ912351,DQ912377,DQ912399,DQ912303,,Xanthoria_polycarpa
+Lecanoromycetes,Teloschistales,Teloschistaceae,Teloschistes,exilis,Hillis 07-726 (DUKE),JQ301630,JQ301577,JQ301726,,JQ301519,,Teloschistes_exilis
+Lecanoromycetes,Teloschistales,Teloschistaceae,Rufoplaca,scotoplaca,Gaya et al. (BCN),JQ301618,JQ301561,JQ301715,,JQ301497,,Rufoplaca_scotoplaca
+Leotiomycetes,Helotiales,Helotiaceae,Chlorociboria,aeruginosa,Johnson KH05252003-20 (OSC) (AFTOL-ID 151),AY544713,AY544669,DQ471125,DQ470886,AY544734,DQ471053,Chlorociboria_aeruginosa
+Leotiomycetes,Rhytismatales,Rhytismataceae,Coccomyces,strobi,,DQ471027 ,DQ470975 ,DQ471173 ,DQ470929 ,FJ190622 ,DQ471099 ,Coccomyces_strobi
+Leotiomycetes,Thelebolales,Thelebolaceae,Thelebolus,microsporus,,FJ176851 ,FJ176905 ,FJ238446 ,FJ238385 ,FJ190662 ,FJ238418 ,Thelebolus_globosus
+Lichinomycetes,Lichinales,Lichinaceae,Lempholemma,polyanthes,Zoladiski & Lutzoni 11294-L1 (2/2) (CANL) (AFTOL-ID 367),AF356690,AF356691,,AY641050,AY584709,,Lempholemma_polyanthes
+Lichinomycetes,Lichinales,Peltulaceae,Peltula,umbilicata,Rauhut A6 (DUKE) (AFTOL-ID 891),DQ782887,DQ832334,DQ782855,DQ832335,DQ922954,DQ782919,Peltula_umbilicata
+Pezizomycetes,Pezizales,Morchellaceae,Morchella,cf. esculenta,"O' Donnell (Peoria, Illinois, 05/09/2003) (OSC) (AFTOL-ID 60)",AY544708,AY544664,DQ471117,DQ470880,AY544750,DQ471046,Morchella_esculenta
+Pezizomycetes,Pezizales,Pyronemataceae,Cheilymenia,stercorea,Johnson KH04282003-4 (OSC) (AFTOL-ID 148),AY544705,AY544661,DQ471123,EF080826,AY544733,DQ471052,Cheilymenia_stercorea
+Pezizomycetes,Pezizales,Pyronemataceae,Scutellinia,scutellata,Sequoia KH03212003-1 (OSC) (AFTOL-ID 62),DQ247814,DQ247806,DQ479935,DQ247796,FJ190587,DQ471047,Scutellinia_scutellata
+Saccharomycetes,Saccharomycetales,Saccharomycetaceae,Saccharomyces,cerevisiae,S288c,J01353,GQ458029,JQ287801,NM_001183570,,,Saccharomyces_cerevisiae
+Schizosaccharomycetes,Schizosaccharomycetales,Schizosaccharomycetaceae,Schizosaccharomyces,pombe,,Z19578,Z19578,X56564,D13337,,,Schizosaccharomyces_pombe
+Sordariomycetes,Boliniales ,Boliniaceae,Camarops,ustulinoides,"DEH 2164, CBS 122033 (AFTOL-ID 72)",DQ470989,DQ470941,DQ471121,DQ470882,FJ190588,DQ471050,Camarops_ustulinoides
+Sordariomycetes,Coniochaetales,Coniochaetaceae,Coniochaeta,streum,,DQ471007 ,DQ470959 ,DQ471151 ,DQ470909 ,FJ190601 ,DQ471078 ,Coniochaeta_ostrea
+Sordariomycetes,Diaporthales,Diaporthaceae,Diaporthe,eres,CBS 109767 (AFTOL-ID 935),DQ471015,AF408350,DQ471161,DQ470919,FJ190607,DQ479931,Diaporthe_eres
+Sordariomycetes,Diaporthales,Gnomoniaceae,Gnomonia,gnomon,CBS 199.53 (AFTOL-ID 952),DQ471019,AF408361,DQ471167,DQ470922,FJ190615,DQ471094,Gnomonia_gnomon
+Sordariomycetes,Hypocreales,Clavicipitaceae,Epichloe,typhina,,U32405 ,U17396 ,,DQ522440 ,FJ713624 ,AF543777 ,Epichloe_typhina
+Sordariomycetes,Hypocreales,Ophiocordycipitaceae,Ophiocordyceps,sinensis,EFCC 7287,EF468971,EF468827,EF468874,EF468924,,,Ophiocordyceps_sinensis
+Sordariomycetes,Microascales,Microascaceae,Microascus,trigonosporus,,DQ471006 ,DQ470958 ,DQ471150 ,DQ470908 ,FJ190600 ,DQ471077 ,Microascus_trigonosporus
+Sordariomycetes,Ophiostomatales,Ophiostomataceae,Ophiostoma,piliferum,,DQ471003 ,DQ470955 ,DQ471147 ,DQ470905 ,,DQ471074 ,Ophiostoma_piliferum
+Sordariomycetes,Sordariales,Sordariaceae,Gelasinospora,tetrasperma,,DQ471032 ,DQ470980 ,DQ471178 ,DQ470932 ,FJ190627 ,DQ471103 ,Gelasinospora_tetrasperma
+Taphrinomycetes,Taphrinales,Protomycetaceae,Protomyces,inouyei,,AY548295 ,AY548294 ,DQ471135 ,AY548299 ,,DQ497611,Protomyces_inouyei
+Taphrinomycetes,Taphrinales,Taphrinaceae,Taphrina,deformans,,DQ471024 ,DQ470973 ,DQ471170 ,DQ470927 ,FJ713610 ,DQ471097 ,Taphrina_deformans

@@ -1,0 +1,120 @@
+Species,Divison.or.Deep.Rank,Class.or.Higher.Level,Order,Family,Genus,X18S,rbcL,atpA,atpB,psaA,psaB,X,X.1,X.2,lichen.clade,TaxToUse
+Floydiella_terrestris,Chlorophyta,Chlorophyceae,Chaetopeltidales,Chaetopeltidaceae,Floydiella,D86498,NC_014346,NC_014346,NC_014346,NC_014346,NC_014346,,,,0,Chlorophyceae
+Schizomeris_leibleinii,Chlorophyta,Chlorophyceae,Chaetophorales,Schizomeridaceae,Schizomeris,AF182820,NC_015645,NC_015645,NC_015645,NC_015645,NC_015645,,,,0,Chlorophyceae
+Stigeoclonium_helveticum,Chlorophyta,Chlorophyceae,Chaetophorales,,Stigeoclonium,U83131,NC_008372,NC_008372,NC_008372,NC_008372,NC_008372,,,,0,Chlorophyceae
+Chlamydomonas_reinhardtii,Chlorophyta,Chlorophyceae,Chlamydomonadales,Chlamydomonadaceae,Chlamydomonas,AB701553,NC_005353,NC_005353,NC_005353,NC_005353,NC_005353,,,,0,Chlorophyceae
+Dunaliella_salina,Chlorophyta,Chlorophyceae,Chlamydomonadales,Dunaliellaceae,Dunaliella,JF903801,NC_016732,NC_016732,NC_016732,NC_016732,NC_016732,,,,0,Chlorophyceae
+Pleodorina_starrii,Chlorophyta,Chlorophyceae,Chlamydomonadales,Volvocaceae,Pleodorina,LC086359,NC_021109,NC_021109,NC_021109,NC_021109,NC_021109,,,,0,Chlorophyceae
+Gonium_pectorale,Chlorophyta,Chlorophyceae,Chlamydomonadales,Volvocaceae,Gonium,FR865741,NC_020438,NC_020438,NC_020438,NC_020438,NC_020438,,,,0,Chlorophyceae
+Volvox_carteri,Chlorophyta,Chlorophyceae,Chlamydomonadales,Volvocaceae,Volvox,X53904,GU084820,GU084820,GU084820,GU084820,GU084820,,,,0,Chlorophyceae
+Oedogonium_cardiacum,Chlorophyta,Chlorophyceae,Oedogoniales,,Oedogonium,U83133,NC_011031,NC_011031,NC_011031,NC_011031,NC_011031,,,,0,Chlorophyceae
+Pediastrum_duplex,Chlorophyta,Chlorophyceae,Sphaeropleales,Hydrodictyaceae,Pediastrum,AY779859,EF078313,NA,AB084306,JN630530,JN630551,UTEX 1364,Chlorophyceae,,0,Chlorophyceae
+Neochloris_aquatica,Chlorophyta,Chlorophyceae,Sphaeropleales,Neochloridaceae,Neochloris,M62861,NC_029670,NC_029670,NC_029670,NC_029670,NC_029670,UTEX 138,Chlorophyceae,Unclear if 18s from same isolate,0,Chlorophyceae
+Acutodesmus_obliquus,Chlorophyta,Chlorophyceae,Sphaeropleales,Scenedesmaceae,Tetradesmus,AJ249515,NC_008101,NC_008101,NC_008101,NC_008101,NC_008101,,,,0,Chlorophyceae
+Ostreococcus_tauri,Chlorophyta,Mamiellophyceae,Mamiellales,Bathycoccaceae,Ostreococcus,GQ426346,NC_008289,NC_008289,NC_008289,NC_008289,NC_008289,,,,0,Mamiellophyceae
+Nephroselmis_olivacea,Chlorophyta,Nephroselmidophyceae,,,Nephroselmis,FN562436,NC_000927,NC_000927,NC_000927,NC_000927,NC_000927,,,,0,Nephroselmidophyceae
+Marsupiomonas_spp,Chlorophyta,Pedinophyceae,Marsupiomonadales,Marsupiomonadaceae,Marsupiomonas,JN592592,KM462870,KM462870,KM462870,KM462870,KM462870,NIES 1824,Pedinophyceae,18s from different isolate,0,Pedinophyceae
+Pedinomonas_minor,Chlorophyta,Pedinophyceae,Pedinomonadales,Pedinomonadaceae,Pedinomonas,JN592588,NC_016733,NC_016733,NC_016733,NC_016733,NC_016733,,,,0,Pedinophyceae
+Monomastix_sp_OKE-1,Chlorophyta,Prasinophyceae,Monomastigales,Monomastigaceae,Monomastix,FJ493496,NC_012101,NC_012101,NC_012101,NC_012101,NC_012101,,,,0,Prasinophyceae
+Dictyochloropsis_irregularis,Chlorophyta,Trebouxiophyceae,--,--,Dictyochloropsis,GU017659,JF502553,NA,NA,NA,NA,SAG 2036,--,,1,Dictyochloropsis
+Dictyochloropsis_sp_MPN124,Chlorophyta,Trebouxiophyceae,--,--,Dictyochloropsis,KC333485,KC333595,NA,NA,NA,NA,MPN124,photobiont of Brigantiaea leucoxantha,,1,Dictyochloropsis
+Dictyochloropsis_sp_MPN168,Chlorophyta,Trebouxiophyceae,--,--,Dictyochloropsis,KC333487,KC333582,NA,NA,NA,NA,MPN168,photobiont of Lobariella sp,,1,Dictyochloropsis
+Dictyochloropsis_sp_MPN181,Chlorophyta,Trebouxiophyceae,--,--,Dictyochloropsis,NA,JN573841,NA,NA,NA,NA,MPN181,photobiont of Lobaria pulmonaria,,1,Dictyochloropsis
+Dictyochloropsis_splendida,Chlorophyta,Trebouxiophyceae,--,--,Dictyochloropsis,GU017665,EF113435,NA,NA,NA,NA,UTEX LB 2599,photobiont of Phlyctis argena,,1,Dictyochloropsis
+Dictyochloropsis_symbiontica_CAUP,Chlorophyta,Trebouxiophyceae,--,--,Dictyochloropsis,KC333473,KC333602,NA,NA,NA,NA,CAUP H8603,free-living,,1,Dictyochloropsis
+Dictyochloropsis_symbiontica_SAG,Chlorophyta,Trebouxiophyceae,--,--,Dictyochloropsis,GU017644,JF502552,NA,NA,NA,NA,SAG 27.81,?Chaenothecopsis?,,1,Dictyochloropsis
+Chlorella_variabilis,Chlorophyta,Trebouxiophyceae,Chlorellales,Chlorellaceae,Chlorella,AB260893,NC_015359,NC_015359,NC_015359,NC_015359,NC_015359,,,,0,
+Chlorella_vulgaris,Chlorophyta,Trebouxiophyceae,Chlorellales,Chlorellaceae,Chlorella,AB178085,NC_001865,NC_001865,NC_001865,NC_001865,NC_001865,,,,0,
+Marvania_geminata,Chlorophyta,Trebouxiophyceae,Chlorellales,Chlorellaceae,Marvania,AF124336,NC_025549,NC_025549,NC_025549,NC_025549,NC_025549,SAG 12.88,,,0,
+Pseudochlorella_pringsheimii,Chlorophyta,Trebouxiophyceae,Chlorellales,Chlorellaceae,Pseudochlorella,KM020138,KM438438,KM438434,EU380549,KM438435,EU380576,UTEX 20; CAUP H 1990; SAG 211-1a,,,0,
+Oocystis_solitaria,Chlorophyta,Trebouxiophyceae,Chlorellales,Oocystaceae,Oocystis,AF228686,FJ968739,FJ968739,FJ968739,FJ968739,FJ968739,,,,0,
+Parachlorella_kessleri,Chlorophyta,Trebouxiophyceae,Chlorellales,,Parachlorella,AB488602,NC_012978,NC_012978,NC_012978,NC_012978,NC_012978,,,,0,
+Elliptochloris_bilobata,Chlorophyta,Trebouxiophyceae,Microthamniales,,Elliptochloris,AM422984,NC_025548,NC_025548,NC_025548,NC_025548,NC_025548,CAUP H 7103,,,1,Elliptochloris
+Microthamnion_kuetzingianum,Chlorophyta,Trebouxiophyceae,Microthamniales,,Microthamnion,AB488588,NC_025537,NC_025537,NC_025537,NC_025537,NC_025537,UTEX 318,,18s from different isolate,0,
+Symbiochloris_handae,Chlorophyta,Trebouxiophyceae,Microthamniales,,Symbiochloris,Z47207,NC_025524,NC_025524,NC_025524,NC_025524,NC_025524,SAG 2150,,18s is from CCHU 5616 which is same as SAG 2150,1,Symbiochloris
+Diplosphaera_sp_AA53935,Chlorophyta,Trebouxiophyceae,Prasiolales,Prasiolaceae,Diplosphaera,JN573890,JN573824,NA,NA,NA,NA,AA53935 (DUKE) ,photobiont of Staurothele frustulenta,,1,Diplosphaera
+Diplosphaera_sp_CG601,Chlorophyta,Trebouxiophyceae,Prasiolales,Prasiolaceae,Diplosphaera,NA,JN573825,NA,NA,NA,NA,CG601,--,,1,Diplosphaera
+Diplosphaera_sp_L532,Chlorophyta,Trebouxiophyceae,Prasiolales,Prasiolaceae,Diplosphaera,NA,JN573852,NA,NA,NA,NA,L532,--,,1,Diplosphaera
+Diplosphaera_sp_MPN177,Chlorophyta,Trebouxiophyceae,Prasiolales,Prasiolaceae,Diplosphaera,NA,NA,NA,NA,NA,NA,MPN177,photobiont of Normandina pulchella,,1,Diplosphaera
+Diplosphaera_sp_MPN178,Chlorophyta,Trebouxiophyceae,Prasiolales,Prasiolaceae,Diplosphaera,NA,JN573842,NA,NA,NA,NA,MPN178,photobiont of Dermatocarpon luridum,,1,Diplosphaera
+Diplosphaera_sp_MPN505,Chlorophyta,Trebouxiophyceae,Prasiolales,Prasiolaceae,Diplosphaera,NA,NA,NA,NA,NA,NA,MPN505,photobiont of Dermatocarpon,,1,Diplosphaera
+Stichococcus_bacillaris,Chlorophyta,Trebouxiophyceae,Prasiolales,Prasiolaceae,Stichococcus,AJ311637,AM260442,NA,NA,NA,NA,SAG 379-1b,water reservoir,,0,
+Pabia_signiensis,Chlorophyta,Trebouxiophyceae,Prasiolales,,Pabia,AJ416108,NC_025529,NC_025529,NC_025529,NC_025529,NC_025529,SAG 7.90,,,0,
+Asterochloris_excentrica,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Asterochloris,NA,AJ969629,NA,NA,NA,NA,IB 345,from Stereocaulon dactylophyllum var. occidentale,,1,Asterochloris
+Asterochloris_magna,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Asterochloris,Z21552,AJ969630,NA,NA,NA,NA,"IB 354, UTEX 902",from Pilophorus acicularis,,1,Asterochloris
+Asterochloris_phycobiontica,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Asterochloris,GU017647,JF502538,NA,NA,NA,NA,SAG 26.81,from Anzina carneonivea,,1,Asterochloris
+Asterochloris_sp_Armaleo_sn,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Asterochloris,JN573863,JN573844,NA,NA,NA,NA,Armaleo s. n. (DUKE),photobiont of Cladonia grayi,,1,Asterochloris
+Asterochloris_sp_CG572,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Asterochloris,JN573891,JN573806,NA,NA,NA,NA,CG572 (DUKE),photobiont of Bagliettoa cazzae,,1,Asterochloris
+Asterochloris_sp_MPN730,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Asterochloris,NA,NA,NA,NA,NA,NA,MPN730,photobiont of Pilophorus cereolus,,1,Asterochloris
+Asterochloris_erici,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Asterochloris,KP318692,AJ969631,NA,EF530541,NA,NA,SAG 32.85,,,1,Asterochloris
+Asterochloris_sp_CAUP_H_1020,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Asterochloris,NA,KM438404,KM438402,NA,NA,NA,CAUP H 1020,,,1,Asterochloris
+Myrmecia_biatorellae,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Myrmecia,AY095367,AF499685,NA,NA,NA,NA,SAG 8.82,photobiont of Lobaria linita,,1,Myrmecia
+Myrmecia_astigmatica,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Myrmecia,Z47208,NA,NA,NA,NA,NA,IB T76,--,,1,Myrmecia
+Myrmecia_sp_OB14461,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Myrmecia,JN573892,JN573811,NA,NA,NA,NA,OB14.461 (LI) ,photobiont of Placidium umbrinum,,1,Myrmecia
+Myrmecia_sp_SH2018,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Myrmecia,JN573893,JN573809,NA,NA,NA,NA,SH2018 (DUKE) ,photobiont of Placidium lachneum,,1,Myrmecia
+Myrmecia_israelensis,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Myrmecia,M62995,NC_025525,NC_025525,NC_025525,NC_025525,NC_025525,UTEX 1181,,not sure if 18s is same isolate as cp,1,Myrmecia
+Trebouxia_aggregata,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Trebouxia,EU123942,EU123967,EU123982,EU123988,EU123975,EU123975,,,,1,Trebouxia
+Trebouxia_arboricola,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Trebouxia,Z68705,AM158960,NA,NA,NA,NA,SAG 219-1a,free-living? Beck et al. 1998 cite Gartner 1985 as possibly suggesting this was free-living.,,1,Trebouxia
+Trebouxia_impressa,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Trebouxia,Z21551,NA,NA,NA,NA,NA,UTEX 892,from Physcia stellaris,,1,Trebouxia
+Trebouxia_jamesii,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Trebouxia,NA,AJ969663,NA,NA,NA,NA,"IB 336, UTEX 2233",from Schaereria tenebrosa (now Schaereria fuscocinerea?),,1,Trebouxia
+Trebouxia_sp_CU296e,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Trebouxia,NA,EF589153,NA,EU380548,NA,NA,CU296e,--,,1,Trebouxia
+Trebouxia_sp_MPN511,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Trebouxia,NA,NA,NA,NA,NA,NA,MPN511,photobiont of Pertusaria,,1,Trebouxia
+Trebouxia_sp_MPN663,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Trebouxia,NA,NA,NA,NA,NA,NA,MPN663,photobiont of Usnea longissima,,1,Trebouxia
+Trebouxia_sp_MPN676,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Trebouxia,NA,NA,NA,NA,NA,NA,MPN676,photobiont of Thamnolia subuliformis,,1,Trebouxia
+Trebouxia_usneae,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Trebouxia,Z68702,NA,NA,NA,NA,NA,UBT-87.019A1,from Parmotrema tinctorum,,1,Trebouxia
+Vulcanochloris_canariensis,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Vulcanochloris,KR952315,KR952311,NA,NA,NA,NA,L1620,,,1,Vulcanochloris
+Vulcanochloris_guanchorum,Chlorophyta,Trebouxiophyceae,Trebouxiales,Trebouxiaceae,Vulcanochloris,KR952316,KR952313,NA,NA,NA,NA,A104,,,1,Vulcanochloris
+Coccomyxa_subellipsoidea_C-169,Chlorophyta,Trebouxiophyceae,,Coccomyxaceae,Coccomyxa,NA,NC_015084,NC_015084,NC_015084,NC_015084,NC_015084,,,,1,Coccomyxa
+Coccomyxa_simplex,Chlorophyta,Trebouxiophyceae,,Coccomyxaceae,Coccomyxa,HE586504,KM438443,KM438440,NA,NA,NA,CAUP H 102,,,1,Coccomyxa
+Heterochlorella_luteoviridis,Chlorophyta,Trebouxiophyceae,,,Heterochlorella,X73998,KX235255,NA,NA,NA,NA,SAG 211-2A,,,0,Heterochlorella
+Heveochlorella_hainangensis,Chlorophyta,Trebouxiophyceae,,,Heveochlorella,KX235244,KR154341,NA,NA,NA,NA,,,,1,Heveochlorella
+Heveochlorella_sp_W12-14,Chlorophyta,Trebouxiophyceae,,,Heveochlorella,KX235248,KX235278,NA,NA,NA,NA,,,,1,Heveochlorella
+Planctonema_lauterbornii,Chlorophyta,Trebouxiophyceae,,,Planctonema,NA,NC_025541,NC_025541,NC_025541,NC_025541,NC_025541,SAG 68.94,,,0,
+Leptosira_terrestris,Chlorophyta,Trebouxiophyceae,,,Pleurastrum,Z28973,NC_009681,NC_009681,NC_009681,NC_009681,NC_009681,,,,0,
+Pseudochloris_wilhelmii,Chlorophyta,Trebouxiophyceae,,,Pseudochloris,AB006046,NC_025547,NC_025547,NC_025547,NC_025547,NC_025547,SAG 1.80,Chlorella_minutissima,,0,
+Watanabea_reniformis,Chlorophyta,Trebouxiophyceae,,,Watanabea,X73991,NC_025526,NC_025526,NC_025526,NC_025526,NC_025526,SAG 211-9b,,,0,
+Trebouxiophyceae_sp_MX-AZ01,Chlorophyta,Trebouxiophyceae,,,Trebouxiophyceae,NA,NC_018569,NC_018569,NC_018569,NC_018569,NC_018569,,,,0,
+Bryopsis_spp,Chlorophyta,Ulvophyceae,Bryopsidales,Bryopsidaceae,Bryopsis,FJ432630,NC_013359,NC_013359,NC_013359,NC_013359,NC_013359,,,,0,Bryopsidales
+Caulerpa_filiformis,Chlorophyta,Ulvophyceae,Bryopsidales,Caulerpaceae,Caulerpa,NA,FR848349,FJ565679,FJ565678,NA,FJ565680,,,,0,Bryopsidales
+Halimeda_cylindracea,Chlorophyta,Ulvophyceae,Bryopsidales,Halimedaceae,Halimeda,NA,KM820145,NA,KM820107,KM820120,KM820118,,,,0,Bryopsidales
+Bornetella_nitida,Chlorophyta,Ulvophyceae,Dasycladales,Dasycladaceae,Bornetella,Z33464,AY177746,NA,FJ480414,NA,NA,,,,0,Dasycladales
+Acetabularia_acetabulum,Chlorophyta,Ulvophyceae,Dasycladales,Polyphysaceae,Acetabularia,AY165773,HG518454,HG518426,HG518427,NA,HG518444,,,from different isolates,0,Dasycladales
+Cephaleuros_virescens,Chlorophyta,Ulvophyceae,Trentepohliales,Trentepohliaceae,Trentepohliales,DQ399585,FJ534599,NA,NA,NA,NA,SAG 42.85,,,1,Trentepohliales
+Cephaleuros_parasiticus,Chlorophyta,Ulvophyceae,Trentepohliales,Trentepohliaceae,Trentepohliales,KM020146,KM464711,KM464687,KM491797,KM464693,KM464698,SAG 73.90,,,1,Trentepohliales
+Printzina_bosseae,Chlorophyta,Ulvophyceae,Trentepohliales,Trentepohliaceae,Trentepohliales,FJ532297,FJ534626,NA,NA,NA,NA,UNA00068479,--,,1,Trentepohliales
+Printzina_lagenifera,Chlorophyta,Ulvophyceae,Trentepohliales,Trentepohliaceae,Trentepohliales,FJ532300,FJ534632,NA,NA,NA,NA,UNA00068184,--,,1,Trentepohliales
+Trentepohlia_aurea,Chlorophyta,Ulvophyceae,Trentepohliales,Trentepohliaceae,Trentepohliales,DQ399590,FJ534608,NA,NA,NA,NA,GALW010299,--,,1,Trentepohliales
+Trentepohlia_annulata,Chlorophyta,Ulvophyceae,Trentepohliales,Trentepohliaceae,Trentepohliales,DQ399588,KM464712,KM464689,KM491796,KM464692,KM464697,SAG 20.94,,,1,Trentepohliales
+Trentepohliales_sp_MPN100,Chlorophyta,Ulvophyceae,Trentepohliales,Trentepohliaceae,Trentepohliales,NA,GU549441,NA,NA,NA,NA,MPN100,--,,1,Trentepohliales
+Trentepohliales_sp_MPN184,Chlorophyta,Ulvophyceae,Trentepohliales,Trentepohliaceae,Trentepohliales,NA,GU549473,NA,NA,NA,NA,MPN184,--,,1,Trentepohliales
+Trentepohliales_sp_MPN39B,Chlorophyta,Ulvophyceae,Trentepohliales,Trentepohliaceae,Trentepohliales,NA,GU549446,NA,NA,NA,NA,MPN39B,--,,1,Trentepohliales
+Trentepohliales_sp_MPN51,Chlorophyta,Ulvophyceae,Trentepohliales,Trentepohliaceae,Trentepohliales,NA,GU549451,NA,NA,NA,NA,MPN51,--,,1,Trentepohliales
+Trentepohliales_sp_MPN69,Chlorophyta,Ulvophyceae,Trentepohliales,Trentepohliaceae,Trentepohliales,NA,GU549456,NA,NA,NA,NA,MPN69,--,,1,Trentepohliales
+Trentepohliales_sp_MPN83,Chlorophyta,Ulvophyceae,Trentepohliales,Trentepohliaceae,Trentepohliales,NA,GU549459,NA,NA,NA,NA,MPN83,--,,1,Trentepohliales
+Dilabifilum_sp_W1017,Chlorophyta,Ulvophyceae,Ulvales,--,Dilabifilum,JN573875,JN573803,NA,NA,NA,NA,W1017 (BM),photobiont of Hydropunctaria maura,,1,Ulvales
+Ulva_linza,Chlorophyta,Ulvophyceae,Ulvales,Ulvaceae,Ulva,JN093105,NC_030312,NC_030312,NC_030312,NC_030312,NC_030312,QD08,,unclear if 18s from same isolate,0,Ulvales
+Pseudendoclonium_akinetum,Chlorophyta,Ulvophyceae,Ulvales,,Pseudendoclonium,DQ011230,NC_008114,NC_008114,NC_008114,NC_008114,NC_008114,,,,0,Ulvales
+Oltmannsiellopsis_viridis,Chlorophyta,Ulvophyceae,,,Oltmannsiellopsis,FN562431,NC_008099,NC_008099,NC_008099,NC_008099,NC_008099,,,,0,Oltmannsiellopsidales
+Verdigellas_peltata,Chlorophyta,Palmophyllophyceae,Palmophyllales,,Verdigellas,FJ619277,NC_030220,NC_030220,NC_030220,NC_030220,NC_030220,LAF 8-26-12-6-1,Palmophyllaceae,unclear if 18s from same isolate,0,Palmophyllophyceae
+Prasinoderma_colonialis,Chlorophyta,Palmophyllophyceae,Prasinococcales,,Prasinoderma,FN562437,NC_024817,NC_024817,NC_024817,NC_024817,NC_024817,CCMP 1220,Palmophyllaceae,18s from different isolate,0,Palmophyllophyceae
+Pyramimonas_parkeae,Chlorophyta,Prasinophyceae,Pyramimonadales,,Pyramimonas,FN562443,NC_012099,NC_012099,NC_012099,NC_012099,NC_012099,,,,0,Prasinophyceae
+Pycnococcus_provasolii,Chlorophyta,Prasinophyceae,,Pycnococcaceae,Pycnococcus,AF122889,NC_012097,NC_012097,NC_012097,NC_012097,NC_012097,,,,0,Prasinophyceae
+Porphyra_purpurea,Rhodophyta,Rhodophyta,Bangiales,Bangiaceae,Porphyra,AF358376,NC_000925,NC_000925,NC_000925,NC_000925,NC_000925,,,,0,Rhodophyta
+Pyropia_yezoensis,Rhodophyta,Rhodophyta,Bangiales,Bangiaceae,Pyropia,D79976,NC_007932,NC_007932,NC_007932,NC_007932,NC_007932,,,,0,Rhodophyta
+Cyanidioschyzon_merolae_strain_10D,Rhodophyta,Rhodophyta,Cyanidiales,Cyanidiaceae,Cyanidioschyzon,AB158485,NC_004799,NC_004799,NC_004799,NC_004799,NC_004799,,,,0,Rhodophyta
+Cyanidium_caldarium,Rhodophyta,Rhodophyta,Cyanidiales,Cyanidiaceae,Cyanidium,AB090833,NC_001840,NC_001840,NC_001840,NC_001840,NC_001840,,,,0,Rhodophyta
+Gracilaria_tenuistipitata_var_liui,Rhodophyta,Rhodophyta,Gracilariales,Gracilariaceae,Gracilaria,DQ316995,NC_006137,NC_006137,NC_006137,NC_006137,NC_006137,,,,0,Rhodophyta
+Ipomoea_spp,Streptophyta,Tracheophytes,Solanales,Convolvulaceae,Ipomoea,HM053486,NC_009808,NC_009808,NC_009808,NC_009808,NC_009808,,,,0,Tracheophytes
+Chara_vulgaris,Streptophyta,Charophyceae,Charales,Characeae,Chara,AF032747,NC_008097,NC_008097,NC_008097,NC_008097,NC_008097,,,unclear if 18s from same isolate,0,Charophyceae
+Chlorokybus_atmophyticus,Streptophyta,Chlorokybophyceae,Chlorokybales,Chlorokybaceae,Chlorokybus,M95612,NC_008822,NC_008822,NC_008822,NC_008822,NC_008822,,,,0,Chlorokybophyceae
+Chaetosphaeridium_globosum,Streptophyta,Coleochaetophyceae,Coleochaetales,Chaetosphaeridiaceae,Chaetosphaeridium,AJ250110,NC_004115,NC_004115,NC_004115,NC_004115,NC_004115,,,,0,Coleochaetophyceae
+Cycas_taitungensis,Streptophyta,Tracheophytes,Cycadales,Cycadaceae,Cycas,D85297,NC_009618,NC_009618,NC_009618,NC_009618,NC_009618,,,,0,Tracheophytes
+Populus_trichocarpa,Streptophyta,Tracheophytes,Malpighiales,Salicaceae,Populus,AY652861,NC_009143,NC_009143,NC_009143,NC_009143,NC_009143,,,,0,Tracheophytes
+Ginkgo_biloba,Streptophyta,Tracheophytes,Ginkgoales,Ginkgoaceae,Ginkgo,D16448,NC_016986,NC_016986,NC_016986,NC_016986,NC_016986,,,,0,Tracheophytes
+Klebsormidium_flaccidum,Streptophyta,Klebsormidiophyceae,Klebsormidiales,Klebsormidiaceae,Klebsormidium,AF408240,NC_024167,NC_024167,NC_024167,NC_024167,NC_024167,SAG 121.8,,unclear if 18s from same isolate,0,Klebsormidiophyceae
+Ptilidium_pulcherrimum,Streptophyta,Marchantiophyta,Ptilidiales,Ptilidiaceae,Ptilidium,DQ629369,NC_015402,NC_015402,NC_015402,NC_015402,NC_015402,,,,0,Marchantiophyta
+Mesostigma_viride,Streptophyta,Mesostigmatophyceae,Mesostigmatales,Mesostigmataceae,Mesostigma,AJ250108,NC_002186,NC_002186,NC_002186,NC_002186,NC_002186,,,,0,Mesostigmatophyceae
+Nymphaea_spp,Streptophyta,Tracheophytes,Nymphaeales,Nymphaeaceae,Nymphaea,L24404,NC_006050,NC_006050,NC_006050,NC_006050,NC_006050,,,,0,Tracheophytes
+Larix_decidua,Streptophyta,Tracheophytes,Pinales,Pinaceae,Larix,AB026938,NC_016058,NC_016058,NC_016058,NC_016058,NC_016058,,,,0,Tracheophytes
+Mesotaenium_endlicherianum,Streptophyta,Zygnemophyceae,Zygnematales,Mesotaeniaceae,Mesotaenium,AJ428078,NC_024169,NC_024169,NC_024169,NC_024169,NC_024169,SAG 12.97,,,0,Zygnemophyceae
+Zygnema_spp,Streptophyta,Zygnemophyceae,Zygnematales,Zygnemataceae,Zygnema,AJ853451,NC_008117,NC_008117,NC_008117,NC_008117,NC_008117,,,,0,Zygnemophyceae
